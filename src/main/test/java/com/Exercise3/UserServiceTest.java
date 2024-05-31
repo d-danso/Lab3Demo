@@ -2,6 +2,10 @@ package com.Exercise3;
 
 import static org.mockito.Mockito.*;
 import static org.junit.Assert.*;
+
+import com.Exercise4.User;
+import com.Exercise4.UserRepository;
+import com.Exercise4.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;

@@ -8,8 +8,12 @@ public class User {
 
     public User(Long id, String name, String email) {
         this.id = id;
-        this.name = name;
-        this.email = email;
+        this.name = (name != null && !name.isEmpty()) ? name : "Default Name";
+        this.email = (email != null && !email.isEmpty()) ? email : "default@example.com";
+    }
+
+    public User() {
+
     }
 
 
