@@ -23,7 +23,7 @@ public class UserServiceTest {
     @Test
     public void testCreateUser() {
 
-        User user = new User();
+        User user = new User(null, "Default Name", "default@example.com");;
         when(userRepository.save(user)).thenReturn(user);
 
 
