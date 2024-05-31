@@ -12,10 +12,6 @@ public class User {
         this.email = (email != null && !email.isEmpty()) ? email : "default@example.com";
     }
 
-    public User() {
-
-    }
-
 
     public Long getId() {
         return id;
@@ -25,4 +21,17 @@ public class User {
         this.id = id;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getName() {
+        return name;
+    }
 }
